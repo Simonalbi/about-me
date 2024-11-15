@@ -20,6 +20,9 @@ export class ProfileSummuryComponent {
 
   get age(): number {
     const now = new Date();
-    return now.getFullYear() - this.bornDate.getFullYear();
+    const ageInMilliseconds = now.getTime() - this.bornDate.getTime();
+    const ageInDays = ageInMilliseconds / (1000 * 60 * 60 * 24);
+    const ageInYears = ageInDays / 365.25;
+    return Math.floor(ageInYears);
   }
 }
