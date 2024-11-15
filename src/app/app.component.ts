@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ProfileSummuryComponent } from "./profile-summury/profile-summury.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, ProfileSummuryComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
