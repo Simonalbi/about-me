@@ -3,14 +3,14 @@ import { Component } from '@angular/core';
 import { DashboardCardComponent } from "../dashboard-card/dashboard-card.component";
 
 @Component({
-  selector: 'app-profile-summury',
+  selector: 'app-profile-summary',
   standalone: true,
   imports: [DashboardCardComponent],
   providers: [DatePipe],
-  templateUrl: './profile-summury.component.html',
-  styleUrl: './profile-summury.component.css'
+  templateUrl: './profile-summary.component.html',
+  styleUrl: './profile-summary.component.css'
 })
-export class ProfileSummuryComponent {
+export class ProfileSummaryComponent {
   private bornDate: Date = new Date(2003, 11, 6);
 
   constructor(private datePipe: DatePipe) {}

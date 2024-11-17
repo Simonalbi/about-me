@@ -1,40 +1,19 @@
 <app-dashboard-card>
-  <h2>Working Experience</h2>
+  <div card-content>
+    <h2>Working Experience</h2>
 
-  @for (company of workingExperienceService.companies; track $index) {
-    <app-agency-timeline
-      [company]="company">
-    </app-agency-timeline>
-  }
+    <div id="companies-container">
+      @for (company of workingExperienceService.companies; track $index) {
+        <app-agency-timeline
+          [company]="company">
+        </app-agency-timeline>
 
-  <!-- <app-agency-timeline
-    role="Custom Software Engineering Analyst"
-    company="Accenture"
-    location="Napoli (NA), Italy"
-    contractType="Full-time"
-    logo="agency/accenture.jpeg"
-    start="lug 2024"
-    workMode="Ibrid">
-  </app-agency-timeline>
+        <!-- Add divider -->
 
-  <app-agency-timeline
-    role="Freelance Software Developer"
-    company="Fiverr"
-    location="Napoli (NA), Italy"
-    contractType="Freelance"
-    logo="agency/fiverr.jpeg"
-    start="ago 2020"
-    workMode="Remote">
-  </app-agency-timeline>
-
-  <app-agency-timeline
-    role="Software Developer"
-    company="Asigint S.R.L.i"
-    location="Napoli (NA), Italy"
-    contractType="Full-time"
-    logo="agency/asigint.png"
-    start="lug 2024"
-    end="giu 2024"
-    workMode="In place">
-  </app-agency-timeline> -->
+        @if ($index < workingExperienceService.companies.length - 1) {
+          <div class="divider"></div>
+        }
+      }
+    </div>
+  </div>
 </app-dashboard-card>

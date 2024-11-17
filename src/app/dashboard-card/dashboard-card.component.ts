@@ -8,5 +8,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './dashboard-card.component.css'
 })
 export class DashboardCardComponent {
-  
+  @Input() banner?: string;
 }

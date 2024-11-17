@@ -1,0 +1,14 @@
+#cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#profile-summary {
+  flex: 1 1 600px;
+}
+
+#working-experience {
+  flex: 1 1 400px;
+}
