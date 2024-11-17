@@ -1,10 +1,3 @@
-#banner-container {
-  position: absolute;
-
-  width: 100%;
-  height: 100px;
-}
-
 #main-info-container {
   position: relative;
 
@@ -12,6 +5,13 @@
   height: inherit;
 
   padding: 20px;
+}
+
+#banner-container {
+  position: absolute;
+
+  width: 100%;
+  height: 100px;
 }
 
 #avatar-container {
@@ -32,14 +32,6 @@
 
 #title-container {
   margin-bottom: 20px;
-}
-
-#title-container > h1 {
-  color: #101517;
-}
-
-#title-container > p {
-  color: #50575e;
 }
 
 #biography {

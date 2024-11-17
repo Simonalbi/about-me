@@ -1,0 +1,14 @@
+<div class="agency-timeline-container">
+  <div class="company-info-container">
+    <div class="agency-logo-container">
+      <img [src]="company.logo">
+    </div>
+
+    <div class="position-info-container">
+      <h5>{{ company.roles[0].name }}</h5>
+      <p class="sm">{{ company.name }} · {{ company.workMode }}</p>
+      <p class="sm gray-text">{{ company.roles[0].startDate | date: 'MMM y'}} - {{ (company.roles[0].endDate  | date: 'MMM y') ?? "Current"}} · N Years M Months</p>
+      <p class="sm gray-text">{{ company.location }} · {{ company.roles[0].contractType}}</p>
+    </div>
+  </div>
+</div>

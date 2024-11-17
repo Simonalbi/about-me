@@ -1,10 +1,11 @@
 import { DatePipe } from '@angular/common';
 import { Component } from '@angular/core';
+import { DashboardCardComponent } from "../dashboard-card/dashboard-card.component";
 
 @Component({
   selector: 'app-profile-summury',
   standalone: true,
-  imports: [],
+  imports: [DashboardCardComponent],
   providers: [DatePipe],
   templateUrl: './profile-summury.component.html',
   styleUrl: './profile-summury.component.css'
