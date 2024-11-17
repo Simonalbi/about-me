@@ -1,0 +1,52 @@
+{
+  "working_experience": [
+    {
+      "company": "Accenture",
+      "logo": "agency/accenture.jpeg",
+      "location": "Napoli (NA), Italy",
+      "work_mode": "Ibrid",
+      "roles": [
+        {
+          "name": "Custom Software Engineering Analyst",
+          "start_date": "2024-07-01",
+          "end_date": null,
+          "contract_type": "Full-time"
+        }
+      ]
+    },
+    {
+      "company": "Fiverr",
+      "logo": "agency/fiverr.jpeg",
+      "location": "Napoli (NA), Italy",
+      "work_mode": "Remote",
+      "roles": [
+        {
+          "name": "Freelance Software Developer",
+          "start_date": "2024-08-01",
+          "end_date": null,
+          "contract_type": "Freelance"
+        }
+      ]
+    },
+    {
+      "company": "Asigint S.R.L.i",
+      "logo": "agency/asigint.png",
+      "location": "Arienzo (CE), Italy",
+      "work_mode": "In place",
+      "roles": [
+        {
+          "name": "Software Developer",
+          "start_date": "2023-06-01",
+          "end_date": "2024-06-01",
+          "contract_type": "Full-time"
+        },
+        {
+          "name": "Apprentice Java Software Developer",
+          "start_date": "2023-02-01",
+          "end_date": "2023-06-01",
+          "contract_type": "Apprenticeship"
+        }
+      ]
+    }
+  ]
+}
