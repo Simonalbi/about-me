@@ -9,15 +9,30 @@
         <h5>{{ company.roles[0].name }}</h5>
         <p class="sm">{{ company.name }} · {{ company.workMode }}</p>
         <p class="sm gray-text">{{ company.absoluteStartDate | date: 'MMM y'}} - {{ (company.absoluteEndDate  | date: 'MMM y') ?? "Current"}} · {{ company.companyPermanenceTime }}</p>
-        <p class="sm gray-text">{{ company.location }} · {{ company.roles[0].contractType}}</p>
+        <p class="sm gray-text">{{ company.location }} · {{ company.roles[0].contractType }}</p>
       </div>
     } @else {
       <!-- TODO - Draw the timeline -->
       <div class="position-info-container">
-        <h5>{{ company.roles[0].name }}</h5>
-        <p class="sm">{{ company.name }} · {{ company.workMode }}</p>
-        <p class="sm gray-text">{{ company.absoluteStartDate | date: 'MMM y'}} - {{ (company.absoluteEndDate| date: 'MMM y') ?? "Current"}} · {{ company.companyPermanenceTime }}</p>
-        <p class="sm gray-text">{{ company.location }} · {{ company.roles[0].contractType}}</p>
+        <h5>{{ company.name }}</h5>
+        <p class="sm">{{ company.companyPermanenceTime }}</p>
+        <p class="sm gray-text">{{ company.location }} · {{ company.workMode }}</p>
+
+        @for (role of company.roles; track $index) {
+          <div class="role-container" #roleContainer>
+            <div class="timeline-container">
+              <div class="timeline-node"></div>
+              @if ($index !== company.roles.length - 1) {
+                <div class="timeline-line"></div>
+              }
+            </div>
+            <div class="role-info-container">
+              <h6>{{ role.name }}</h6>
+              <p class="sm">{{ role.contractType }}</p>
+              <p class="sm gray-text">{{ role.startDate | date: 'MMM y'}} - {{ (role.endDate| date: 'MMM y') ?? "Current"}} · N years Y months</p>
+            </div>
+          </div>
+        }
       </div>
     }
 

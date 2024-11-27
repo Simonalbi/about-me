@@ -1,3 +1,14 @@
+:root {
+  --pure-white: #FFFFFF;
+  --ghost-white: #F8F9FA;
+  --chinese-black: #101517;
+  --davis-gray: #50575E;
+  --chinese-white: #E0E0E0;
+  --platinum: #E5E5E5;
+  --transparent-philippine-gray: #8C8C8C33;
+  --transparent-pure-black: #00000042;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +21,7 @@ html {
 
 body {
   padding: 25px;
-  background-color: #fbfaff;
+  background-color: var(--ghost-white);
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -20,7 +31,7 @@ p, a, span {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #101517;
+  color: var(--chinese-black);
   letter-spacing: -.34px;
   line-height: 110%;
 }
@@ -73,7 +84,7 @@ p {
 }
 
 .gray-text {
-  color: #50575e;
+  color: var(--davis-gray);
 }
 
 .icon-sm,
@@ -108,5 +119,5 @@ p {
 .divider {
   width: 100%;
   height: 1px;
-  background-color: #e0e0e0;
+  background-color: var(--chinese-white);
 }

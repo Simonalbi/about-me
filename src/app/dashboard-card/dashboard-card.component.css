@@ -3,12 +3,12 @@
 
   height: fit-content;
 
-  background-color: #FFFFFF;
+  background-color: var(--pure-white);
   border-radius: 10px;
 
   overflow: hidden;
 
-  border: 1px solid #E5E5E5;
+  border: 1px solid var(--platinum);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
