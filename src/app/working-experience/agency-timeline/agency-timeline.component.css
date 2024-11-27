@@ -1,4 +1,4 @@
-.company-info-container {
+.experience-info-container {
   position: relative;
 
   display: flex;
@@ -6,7 +6,13 @@
   gap: 10px;
 }
 
-.agency-logo-container {
+.experience-header-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.company-logo-container {
   width: 48px;
   min-width: 48px;
 
@@ -17,33 +23,22 @@
   overflow: hidden;
 }
 
-.agency-logo-container img {
+.company-logo-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.role-container {
-  display: flex;
+.company-role-container {
   margin-top: 5px;
+
+  display: flex;
+  gap: 10px;
 }
 
-.position-info-container > .role-container:first-of-type {
-  margin-top: 10px;
-}
-
-.position-info-container > .role-container:not(:last-of-type) {
-  margin-bottom: 20px;
-}
-
-.timeline-container {
-  position: absolute;
-  left: 20px;
-
-  width: 10px;
-  height: 84px;
-
-  padding: 5px 0 0 0;
+.company-timeline-container {
+  width: 48px;
+  min-width: 48px;
 
   display: flex;
   flex-direction: column;
@@ -52,17 +47,17 @@
   gap: 5px;
 }
 
-.timeline-node {
+.company-timeline-node {
   width: 8px;
   height: 8px;
-  background-color: var(--transparent-pure-black);
-
   border-radius: 50%;
+
+  background-color: var(--transparent-pure-black);
 }
 
-.timeline-line {
+.company-timeline-line {
   width: 2px;
-  height: calc(100% - (5px + 5px + 8px));
+  height: calc(100% - (5px + 8px));
   background-color: var(--transparent-philippine-gray);
 }
 
