@@ -6,7 +6,7 @@
           <img [src]="company.logo">
         </div>
 
-        <div class="company-info-container">
+        <div class="company-info-container" [ngClass]="{'timeline-header': company.roles.length > 1}">
           @if (company.roles.length === 1) {
             <h5>{{ company.roles[0].name }}</h5>
             <p class="sm">{{ company.name }} · {{ company.workMode }}</p>
@@ -22,14 +22,14 @@
 
       @if (company.roles.length > 1) {
         @for (role of company.roles; track $index) {
-          <div class="company-role-container" #roleContainer>
+          <div class="company-role-container">
             <div class="company-timeline-container">
               <div class="company-timeline-node"></div>
               @if ($index !== company.roles.length - 1) {
                 <div class="company-timeline-line"></div>
               }
             </div>
-            <div>
+            <div class="company-role-info">
               <h6>{{ role.name }}</h6>
               <p class="sm">{{ role.contractType }}</p>
               <p class="sm gray-text">{{ role.startDate | date: 'MMM y'}} - {{ (role.endDate| date: 'MMM y') ?? "Current"}} · N years Y months</p>

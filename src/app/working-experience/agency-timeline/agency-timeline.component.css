@@ -12,6 +12,10 @@
   gap: 10px;
 }
 
+.timeline-header {
+  margin-bottom: 12px;
+}
+
 .company-logo-container {
   width: 48px;
   min-width: 48px;
@@ -30,8 +34,6 @@
 }
 
 .company-role-container {
-  margin-top: 5px;
-
   display: flex;
   gap: 10px;
 }
@@ -39,6 +41,8 @@
 .company-timeline-container {
   width: 48px;
   min-width: 48px;
+
+  padding-top: 5px;
 
   display: flex;
   flex-direction: column;
@@ -61,20 +65,20 @@
   background-color: var(--transparent-philippine-gray);
 }
 
+.company-role-info {
+  margin-bottom: 30px;
+}
+
 @media (max-width: 450px) {
-  .agency-logo-container {
+  .company-logo-container {
     width: 36px;
     min-width: 36px;
     height: 36px;
     min-height: 36px;
   }
-}
 
-/* @media (max-width: 300px) {
-  .agency-logo-container {
-    width: 24px;
-    min-width: 24px;
-    height: 24px;
-    min-height: 24px;
+  .company-timeline-container {
+    width: 36px;
+    min-width: 36px;
   }
-} */
+}
