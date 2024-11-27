@@ -30,10 +30,6 @@
   margin-bottom: 20px;
 }
 
-/* #personal-data-container > span {
-  flex: 0 0 45%;
-} */
-
 #social-container {
   display: flex;
   justify-content: flex-end;
