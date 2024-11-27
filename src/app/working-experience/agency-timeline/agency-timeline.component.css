@@ -12,6 +12,21 @@
   gap: 10px;
 }
 
+.company-info-container > h5,
+.company-info-container > h5 > a {
+  display: flex;
+  align-items: center;
+}
+
+.company-info-container > h5 {
+  gap: 5px;
+}
+
+.company-info-container > h5 img {
+  width: 15px;
+  height: 15px;
+}
+
 .timeline-header {
   margin-bottom: 12px;
 }

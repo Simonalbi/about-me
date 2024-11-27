@@ -5,13 +5,15 @@ export class Company {
   readonly logo: string;
   readonly location: string;
   readonly workMode: string;
+  readonly website: string;
   readonly roles: Array<Role>;
 
-  constructor(name: string, logo: string, location: string, workMode: string, roles: Array<Role>) {
+  constructor(name: string, logo: string, location: string, workMode: string, website: string, roles: Array<Role>) {
     this.name = name;
     this.logo = logo;
     this.location = location;
     this.workMode = workMode;
+    this.website = website;
 
     this.roles = roles;
     this.roles.sort((a, b) => b.startDate.getTime() - a.startDate.getTime());

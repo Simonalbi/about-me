@@ -20,6 +20,7 @@ export class WorkingExperienceService {
           company.logo,
           company.location,
           company.work_mode,
+          company.website,
           company.roles.map((role) => new Role(
             role.name,
             new Date(role.start_date),

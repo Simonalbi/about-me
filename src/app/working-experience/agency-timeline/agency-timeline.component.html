@@ -7,13 +7,17 @@
         </div>
 
         <div class="company-info-container" [ngClass]="{'timeline-header': company.roles.length > 1}">
+          <h5>
+            {{ company.roles.length > 1 ? company.name : company.roles[0].name }}
+            <a [href]="company.website" target="_blank" class="sm">
+              <img src="gicons/open_in_new.svg" alt="Company website">
+            </a>
+          </h5>
           @if (company.roles.length === 1) {
-            <h5>{{ company.roles[0].name }}</h5>
             <p class="sm">{{ company.name }} · {{ company.workMode }}</p>
             <p class="sm gray-text">{{ company.absoluteStartDate | date: 'MMM y'}} - {{ (company.absoluteEndDate  | date: 'MMM y') ?? "Current"}} · {{ company.companyPermanenceTime }}</p>
             <p class="sm gray-text">{{ company.location }} · {{ company.roles[0].contractType }}</p>
           } @else {
-            <h5>{{ company.name }}</h5>
             <p class="sm">{{ company.companyPermanenceTime }}</p>
             <p class="sm gray-text">{{ company.location }} · {{ company.workMode }}</p>
           }
