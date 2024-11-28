@@ -1,0 +1,19 @@
+<div class="school-container">
+  <div class="logo-container">
+    <img [src]="school.logo">
+  </div>
+
+  <div class="school-info-container">
+    <h5>
+      {{ school.name }}
+      <a [href]="school.website" target="_blank">
+        <img src="gicons/open_in_new.svg" alt="Company website">
+      </a>
+    </h5>
+    <p class="sm">{{ school.degree }}</p>
+    <p class="sm gray-text">{{ school.startDate | date: 'MMM y'}} - {{ (school.endDate  | date: 'MMM y') ?? "Current"}}</p>
+    <!-- @if (school.grade) {
+      <p class="sm gray-text">Grade: {{ school.grade }}</p>
+    } -->
+  </div>
+</div>

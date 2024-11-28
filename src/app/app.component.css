@@ -2,13 +2,20 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
   gap: 15px;
 }
 
 #profile-summary {
-  flex: 1 1 600px;
+  flex: 1 1 100%;
 }
 
 #working-experience {
-  flex: 1 1 400px;
+  flex: 1 0 30%;
+  min-width: 332px;
+}
+
+#secondary-informations {
+  flex: 1 0 60%;
+  min-width: 332px;
 }

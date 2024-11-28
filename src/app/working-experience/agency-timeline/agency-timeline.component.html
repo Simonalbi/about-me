@@ -1,44 +1,42 @@
 <div class="experience-info-container">
-  <div>
-    <div class="experience-header-container">
-      <div class="company-logo-container">
-        <img [src]="company.logo">
-      </div>
-
-      <div class="company-info-container" [ngClass]="{'timeline-header': company.roles.length > 1}">
-        <h5>
-          {{ company.roles.length > 1 ? company.name : company.roles[0].name }}
-          <a [href]="company.website" target="_blank" class="sm">
-            <img src="gicons/open_in_new.svg" alt="Company website">
-          </a>
-        </h5>
-        @if (company.roles.length === 1) {
-          <p class="sm">{{ company.name }} · {{ company.workMode }}</p>
-          <p class="sm gray-text">{{ company.absoluteStartDate | date: 'MMM y'}} - {{ (company.absoluteEndDate  | date: 'MMM y') ?? "Current"}} · {{ company.companyPermanenceTime }}</p>
-          <p class="sm gray-text">{{ company.location }} · {{ company.roles[0].contractType }}</p>
-        } @else {
-          <p class="sm">{{ company.companyPermanenceTime }}</p>
-          <p class="sm gray-text">{{ company.location }} · {{ company.workMode }}</p>
-        }
-      </div>
+  <div class="experience-header-container">
+    <div class="logo-container">
+      <img [src]="company.logo">
     </div>
 
-    @if (company.roles.length > 1) {
-      @for (role of company.roles; track $index) {
-        <div class="company-role-container">
-          <div class="company-timeline-container">
-            <div class="company-timeline-node"></div>
-            @if ($index !== company.roles.length - 1) {
-              <div class="company-timeline-line"></div>
-            }
-          </div>
-          <div class="company-role-info">
-            <h6>{{ role.name }}</h6>
-            <p class="sm">{{ role.contractType }}</p>
-            <p class="sm gray-text">{{ role.startDate | date: 'MMM y'}} - {{ (role.endDate| date: 'MMM y') ?? "Current"}} · N years Y months</p>
-          </div>
-        </div>
+    <div class="company-info-container" [ngClass]="{'timeline-header': company.roles.length > 1}">
+      <h5>
+        {{ company.roles.length > 1 ? company.name : company.roles[0].name }}
+        <a [href]="company.website" target="_blank">
+          <img src="gicons/open_in_new.svg" alt="Company website">
+        </a>
+      </h5>
+      @if (company.roles.length === 1) {
+        <p class="sm">{{ company.name }} · {{ company.workMode }}</p>
+        <p class="sm gray-text">{{ company.absoluteStartDate | date: 'MMM y'}} - {{ (company.absoluteEndDate  | date: 'MMM y') ?? "Current"}} · {{ company.companyPermanenceTime }}</p>
+        <p class="sm gray-text">{{ company.location }} · {{ company.roles[0].contractType }}</p>
+      } @else {
+        <p class="sm">{{ company.companyPermanenceTime }}</p>
+        <p class="sm gray-text">{{ company.location }} · {{ company.workMode }}</p>
       }
-    }
+    </div>
   </div>
+
+  @if (company.roles.length > 1) {
+    @for (role of company.roles; track $index) {
+      <div class="company-role-container">
+        <div class="company-timeline-container">
+          <div class="company-timeline-node"></div>
+          @if ($index !== company.roles.length - 1) {
+            <div class="company-timeline-line"></div>
+          }
+        </div>
+        <div class="company-role-info">
+          <h6>{{ role.name }}</h6>
+          <p class="sm">{{ role.contractType }}</p>
+          <p class="sm gray-text">{{ role.startDate | date: 'MMM y'}} - {{ (role.endDate| date: 'MMM y') ?? "Current"}} · N years Y months</p>
+        </div>
+      </div>
+    }
+  }
 </div>

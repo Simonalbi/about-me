@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { Company } from './company.model';
-import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 
 @Component({
