@@ -2,7 +2,7 @@
   "working_experience": [
     {
       "company": "Accenture",
-      "logo": "agency/accenture.jpeg",
+      "logo": "companies/accenture.jpeg",
       "location": "Napoli (NA), Italy",
       "work_mode": "Ibrid",
       "website": "https://www.accenture.com",
@@ -17,7 +17,7 @@
     },
     {
       "company": "Fiverr",
-      "logo": "agency/fiverr.jpeg",
+      "logo": "companies/fiverr.jpeg",
       "location": "Napoli (NA), Italy",
       "work_mode": "Remote",
       "website": "https://www.fiverr.com/s2/fba866e7fa",
@@ -32,7 +32,7 @@
     },
     {
       "company": "Asigint S.R.L.i",
-      "logo": "agency/asigint.png",
+      "logo": "companies/asigint.png",
       "location": "Arienzo (CE), Italy",
       "work_mode": "In place",
       "website": "https://www.asigint.it",
