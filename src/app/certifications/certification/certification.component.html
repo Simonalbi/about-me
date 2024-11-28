@@ -1,0 +1,21 @@
+<div class="certification-container">
+  <div class="logo-container">
+    <img [src]="certification.logo">
+  </div>
+
+  <div>
+    <h5>{{ certification.name }}</h5>
+    <div class="certification-info-container">
+      <div class="certification-info">
+        <p class="sm">{{ certification.organization }}</p>
+        <p class="sm gray-text">{{ certification.date | date: 'MMM y'}}</p>
+      </div>
+      <a [href]="certification.url" target="_blank">
+        <div class="certification-url-button icon-sm">
+          <h6>Show certificate</h6>
+          <img src="gicons/open_in_new.svg" alt="Certification url">
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

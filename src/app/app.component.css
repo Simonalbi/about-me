@@ -12,10 +12,14 @@
 
 #working-experience {
   flex: 1 0 30%;
-  min-width: 332px;
+  min-width: 335px;
 }
 
 #secondary-informations {
   flex: 1 0 60%;
-  min-width: 332px;
+  min-width: 335px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }

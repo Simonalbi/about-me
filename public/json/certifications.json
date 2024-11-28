@@ -1,0 +1,12 @@
+{
+  "certifications": [
+    {
+      "name": "Neo4j Certified Professional",
+      "organization": "Neo4j",
+      "logo": "certifications/neo4j.png",
+      "date": "2023-12-04",
+      "id": "bacecb7b-b2bc-4b31-a717-bb27e5879e60",
+      "url": "https://graphacademy.neo4j.com/c/bacecb7b-b2bc-4b31-a717-bb27e5879e60/"
+    }
+  ]
+}
