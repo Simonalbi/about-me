@@ -1,18 +1,9 @@
-<app-dashboard-card>
+<app-dashboard-card title="Education" type="list">
   <div card-content>
-    <h2>Education</h2>
-
-    <div id="schools-container">
-      @for (school of educationService.schools; track $index) {
-        <app-school
-          [school]="school"
-        ></app-school>
-
-        @if ($index < educationService.schools.length - 1) {
-          <div class="divider"></div>
-        }
-      }
-    </div>
-
+    @for (school of educationService.schools; track $index) {
+      <app-school
+        [school]="school">
+      </app-school>
+    }
   </div>
 </app-dashboard-card>

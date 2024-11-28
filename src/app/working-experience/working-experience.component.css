@@ -1,9 +1,0 @@
-h2 {
-  margin-bottom: 20px;
-}
-
-#companies-container {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}

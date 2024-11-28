@@ -1,17 +1,9 @@
-<app-dashboard-card>
+<app-dashboard-card title="Working Experience" type="list">
   <div card-content>
-    <h2>Working Experience</h2>
-
-    <div id="companies-container">
-      @for (company of workingExperienceService.companies; track $index) {
-        <app-agency-timeline
-          [company]="company">
-        </app-agency-timeline>
-
-        @if ($index < workingExperienceService.companies.length - 1) {
-          <div class="divider"></div>
-        }
-      }
-    </div>
+    @for (company of workingExperienceService.companies; track $index) {
+      <app-agency-timeline
+        [company]="company">
+      </app-agency-timeline>
+    }
   </div>
 </app-dashboard-card>

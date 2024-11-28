@@ -1,17 +1,18 @@
 <section class="card">
   @if (banner) {
     <div class="card-banner">
-      <img src="banner.png" alt="banner">
+      <img [src]="banner" alt="card-banner">
     </div>
   }
 
   <div class="card-content">
+    @if (title) {
+      <h2 class="card-title">{{ title }}</h2>
+    }
     <ng-content select="[card-content]"></ng-content>
   </div>
 
   <div class="card-footer">
     <ng-content select="[card-footer]"></ng-content>
   </div>
-
-  <!-- <ng-content></ng-content> -->
 </section>
