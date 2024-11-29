@@ -13,10 +13,10 @@
       </h5>
       @if (company.roles.length === 1) {
         <p class="sm">{{ company.name }} · {{ company.workMode }}</p>
-        <p class="sm gray-text">{{ company.absoluteStartDate | date: 'MMM y'}} - {{ (company.absoluteEndDate  | date: 'MMM y') ?? "Current"}} · {{ company.companyPermanenceTime }}</p>
+        <p class="sm gray-text">{{ company.absoluteStartDate | date: 'MMM y'}} - {{ (company.absoluteEndDate  | date: 'MMM y') ?? "Current"}} · {{ company.periodString }}</p>
         <p class="sm gray-text">{{ company.location }} · {{ company.roles[0].contractType }}</p>
       } @else {
-        <p class="sm">{{ company.companyPermanenceTime }}</p>
+        <p class="sm">{{ company.periodString }}</p>
         <p class="sm gray-text">{{ company.location }} · {{ company.workMode }}</p>
       }
     </div>
@@ -34,7 +34,7 @@
         <div class="company-role-info">
           <h6>{{ role.name }}</h6>
           <p class="sm">{{ role.contractType }}</p>
-          <p class="sm gray-text">{{ role.startDate | date: 'MMM y'}} - {{ (role.endDate| date: 'MMM y') ?? "Current"}} · N years Y months</p>
+          <p class="sm gray-text">{{ role.startDate | date: 'MMM y'}} - {{ (role.endDate| date: 'MMM y') ?? "Current"}} · {{ role.periodString }}</p>
         </div>
       </div>
     }

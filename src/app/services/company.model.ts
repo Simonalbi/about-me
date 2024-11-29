@@ -1,14 +1,18 @@
-import { Role } from './role.model';
+import { Periodizable } from "../interfaces/periodizable.interface";
+import { Role } from "./role.model";
 
-export class Company {
+export class Company extends Periodizable {
   readonly name: string;
   readonly logo: string;
   readonly location: string;
   readonly workMode: string;
   readonly website: string;
   readonly roles: Array<Role>;
+  override startDate: Date;
+  override endDate?: Date;
 
   constructor(name: string, logo: string, location: string, workMode: string, website: string, roles: Array<Role>) {
+    super();
     this.name = name;
     this.logo = logo;
     this.location = location;
@@ -17,6 +21,9 @@ export class Company {
 
     this.roles = roles;
     this.roles.sort((a, b) => b.startDate.getTime() - a.startDate.getTime());
+
+    this.startDate = this.roles[this.roles.length - 1].startDate;
+    this.endDate = this.roles[0].endDate;
   }
 
   get absoluteStartDate(): Date {
@@ -25,42 +32,5 @@ export class Company {
 
   get absoluteEndDate(): Date | null {
     return this.roles[0].endDate ?? null;
-  }
-
-  get companyPermanenceTime(): string {
-    let endDate = this.roles[0].endDate;
-    if (!endDate) {
-      endDate = new Date();
-    }
-
-    let months = Math.abs(endDate.getMonth() - this.roles[this.roles.length - 1].startDate.getMonth());
-    let years = Math.abs(endDate.getFullYear() - this.roles[this.roles.length - 1].startDate.getFullYear());
-
-    months++;
-    if (months === 12) {
-      years++;
-      months = 0;
-    }
-
-    let companyPermanenceTime = "";
-    if (years > 0) {
-      companyPermanenceTime += `${years} year`;
-      if (years > 1) {
-        companyPermanenceTime += "s";
-      }
-    }
-
-    if (months > 0) {
-      if (years > 0) {
-        companyPermanenceTime += " and ";
-      }
-
-      companyPermanenceTime += `${months} month`;
-      if (months > 1) {
-        companyPermanenceTime += "s";
-      }
-    }
-
-    return companyPermanenceTime;
   }
 }
