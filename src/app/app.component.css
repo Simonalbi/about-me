@@ -8,16 +8,17 @@
 
 #profile-summary {
   flex: 1 1 100%;
+  min-width: 320px;
 }
 
 #working-experience {
   flex: 1 0 30%;
-  min-width: 335px;
+  min-width: 320px;
 }
 
 #secondary-informations {
   flex: 1 0 60%;
-  min-width: 335px;
+  min-width: 320px;
 
   display: flex;
   flex-direction: column;
