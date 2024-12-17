@@ -3,8 +3,12 @@ export abstract class Periodizable {
   abstract endDate?: Date;
 
   get periodString(): string {
-    let months = Math.abs((this.endDate ?? new Date()).getMonth() - this.startDate.getMonth());
-    let years = Math.abs((this.endDate ?? new Date()).getFullYear() - this.startDate.getFullYear());
+    const currentPeriodEndDate = new Date();
+    currentPeriodEndDate.setMonth(currentPeriodEndDate.getMonth() + 1);
+
+    const endDate = this.endDate ?? currentPeriodEndDate;
+    let months = Math.abs(endDate.getMonth() - this.startDate.getMonth());
+    let years = Math.abs(endDate.getFullYear() - this.startDate.getFullYear());
 
     let period = "";
     if (years > 0) {
