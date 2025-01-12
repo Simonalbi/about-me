@@ -1,10 +1,13 @@
+import {differenceInYears, differenceInMonths} from 'date-fns';
+
 export abstract class Periodizable {
   abstract startDate: Date;
   abstract endDate?: Date;
 
   get periodString(): string {
-    let months = Math.abs((this.endDate ?? new Date()).getMonth() - this.startDate.getMonth());
-    let years = Math.abs((this.endDate ?? new Date()).getFullYear() - this.startDate.getFullYear());
+    const endDate = this.endDate ?? new Date();
+    const years = differenceInYears(endDate, this.startDate);
+    const months = differenceInMonths(endDate, this.startDate) % 12;
 
     let period = "";
     if (years > 0) {
