@@ -1,0 +1,9 @@
+<app-dashboard-card title="Badges">
+  <div card-content>
+    <div id="badges-grid">
+      @for (badge of badgesService.badges; track $index) {
+        <app-badge [badge]="badge" class="badge"></app-badge>
+      }
+    </div>
+  </div>
+</app-dashboard-card>
