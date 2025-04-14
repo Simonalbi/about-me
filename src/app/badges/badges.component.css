@@ -6,8 +6,8 @@
 }
 
 #badges-grid .badge {
-  flex: 1 0 120px;
-  max-width: 170px;
+  flex: 1 0 100px;
+  max-width: 150px;
   margin: 10px;
   display: flex;
   justify-content: center;
