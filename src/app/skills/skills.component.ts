@@ -37,13 +37,13 @@ export class SkillsComponent implements OnInit{
     'Ottimo',
     'Avanzato',
     'Esperto',
-    'Certificato'
+    'Professionista'
   ];
 
   chartOptions: EChartsOption = {};
 
   async ngOnInit(): Promise<void> {
-    const skills = this.skillsService.skillsList;
+    const skills = this.skillsService.skillsList.reverse();
 
     const screenWidth  = window.innerWidth;
     let symbolSize: number;
@@ -56,6 +56,11 @@ export class SkillsComponent implements OnInit{
     }
 
     const barWidth = symbolSize / 3;
+
+    var labelsRotation: number = 0;
+    if (screenWidth < 780) {
+      labelsRotation = -60;
+    }
 
     const data = await Promise.all(
       skills.map(async skill => {
@@ -74,25 +79,12 @@ export class SkillsComponent implements OnInit{
       animationEasing: 'cubicOut',
       grid: {
         left: '1%',
-        right: '4%',
+        right: '10%',
         top: '5%',
         bottom: '1%',
         containLabel: true
       },
       xAxis: {
-        type: 'category',
-        data: skills.map(skill => skill.name),
-        axisLine: { show: false },
-        axisTick: { show: false },
-        axisLabel: {
-          interval: 0,
-          rotate: -55,
-          margin: 10,
-          fontSize: 12,
-          fontWeight: 'bold'
-        }
-      },
-      yAxis: {
         type: 'value',
         min: 0,
         max: 9,
@@ -105,10 +97,34 @@ export class SkillsComponent implements OnInit{
           }
         },
         axisLabel: {
-          formatter: (value: number) => this.labels[value] ?? ''
+          formatter: (value: number) =>this.labels[value] ?? '',
+          rich: {
+            top: {
+              padding: [0, 0, 16, 0],
+              verticalAlign: 'bottom'
+            },
+            bottom: {
+              padding: [16, 0, 0, 0],
+              verticalAlign: 'top'
+            }
+          },
+          fontSize: 10,
+          rotate: labelsRotation
         },
         axisLine: { show: false },
+        axisTick: { show: false }
+      },
+      yAxis: {
+        type: 'category',
+        data: skills.map(skill => skill.name),
+        axisLine: { show: false },
         axisTick: { show: false },
+        axisLabel: {
+          interval: 0,
+          margin: 10,
+          fontSize: 12,
+          fontWeight: 'bold'
+        }
       },
       series: [
         {
@@ -126,7 +142,7 @@ export class SkillsComponent implements OnInit{
             symbol: `image://${skill.image}`,
             symbolSize: symbolSize
           })),
-          symbolOffset: [0, -symbolSize * 0.75],
+          symbolOffset: [symbolSize * 0.75, 0],
           xAxisIndex: 0,
           yAxisIndex: 0,
           z: 10
