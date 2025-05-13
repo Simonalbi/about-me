@@ -1,26 +1,55 @@
 #cards-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(5, 0.1fr); */
+  gap: 8px;
 }
 
 #profile-summary {
-  flex: 1 1 100%;
-  min-width: 320px;
+  grid-column: span 3 / span 3;
 }
 
 #working-experience {
-  flex: 1 0 30%;
-  min-width: 320px;
+  grid-row: span 3 / span 3;
+  grid-row-start: 2;
 }
 
-#secondary-informations {
-  flex: 1 0 60%;
-  min-width: 320px;
+#education {
+  grid-column: span 2 / span 2;
+  grid-row-start: 2;
+}
 
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+#certifications {
+  grid-column: span 2 / span 2;
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+
+#badges {
+  grid-column: span 2 / span 2;
+  grid-column-start: 2;
+  grid-row-start: 4;
+}
+
+#skills {
+  grid-column: span 3 / span 3;
+
+  grid-row-start: 5;
+}
+
+@media (max-width: 1024px) {
+  #cards-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+
+  #profile-summary,
+  #working-experience,
+  #education,
+  #certifications,
+  #badges,
+  #skills {
+    grid-column: span 1 / span 1;
+    grid-row: auto;
+  }
 }

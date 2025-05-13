@@ -1,10 +1,22 @@
 <div id="cards-container">
-  <app-profile-summary id="profile-summary"></app-profile-summary>
-  <app-working-experience id="working-experience"></app-working-experience>
-  <div id="secondary-informations">
-    <app-education id="education"></app-education>
-    <app-certifications id="certifications"></app-certifications>
-    <app-badges></app-badges>
+  <div id="profile-summary">
+    <app-profile-summary />
+  </div>
+  <div id="working-experience">
+    <app-working-experience />
+  </div>
+  <div id="education">
+    <app-education />
+  </div>
+  <div id="certifications">
+    <app-certifications />
+  </div>
+  <div id="badges">
+    <app-badges />
+  </div>
+  <div id="skills">
+    <app-skills />
   </div>
 </div>
+
 <router-outlet />

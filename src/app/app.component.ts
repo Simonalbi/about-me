@@ -5,11 +5,12 @@ import { WorkingExperienceComponent } from "./working-experience/working-experie
 import { EducationComponent } from './education/education.component';
 import { CertificationsComponent } from './certifications/certifications.component';
 import { BadgesComponent } from "./badges/badges.component";
+import { SkillsComponent } from "./skills/skills.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ProfileSummaryComponent, WorkingExperienceComponent, EducationComponent, CertificationsComponent, BadgesComponent],
+  imports: [RouterOutlet, ProfileSummaryComponent, WorkingExperienceComponent, EducationComponent, CertificationsComponent, BadgesComponent, SkillsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

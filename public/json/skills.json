@@ -1,0 +1,89 @@
+{
+  "skills": [
+    {
+      "name": "Java",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+      "level": 7
+    },
+    {
+      "name": "Python",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      "level": 8
+    },
+    {
+      "name": "C",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
+      "level": 4
+    },
+    {
+      "name": "C#",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
+      "level": 2
+    },
+    {
+      "name": "HTML",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      "level": 7
+    },
+    {
+      "name": "CSS",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      "level": 6
+    },
+    {
+      "name": "JavaScript",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      "level": 7
+    },
+    {
+      "name": "TypeScript",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      "level": 7
+    },
+    {
+      "name": "MySQL",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+      "level": 6
+    },
+    {
+      "name": "SQLite",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg",
+      "level": 8
+    },
+    {
+      "name": "Neo4j",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/neo4j/neo4j-original.svg",
+      "level": 5
+    },
+    {
+      "name": "Git",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      "level": 8
+    },
+    {
+      "name": "Spring",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+      "level": 3
+    },
+    {
+      "name": "Android SDK",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg",
+      "level": 5
+    },
+    {
+      "name": "Arduino",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg",
+      "level": 2
+    },
+    {
+      "name": "Angular",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg",
+      "level": 6
+    },
+    {
+      "name": "GitHub",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      "level": 8
+    }
+  ]
+}
