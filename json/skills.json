@@ -1,0 +1,94 @@
+{
+  "skills": [
+    {
+      "name": "Java",
+      "image": "skills/java-original.svg",
+      "level": 7
+    },
+    {
+      "name": "Python",
+      "image": "skills/python-original.svg",
+      "level": 8
+    },
+    {
+      "name": "C",
+      "image": "skills/c-original.svg",
+      "level": 4
+    },
+    {
+      "name": "C#",
+      "image": "skills/csharp-original.svg",
+      "level": 2
+    },
+    {
+      "name": "HTML",
+      "image": "skills/html5-original.svg",
+      "level": 7
+    },
+    {
+      "name": "CSS",
+      "image": "skills/css3-original.svg",
+      "level": 6
+    },
+    {
+      "name": "JavaScript",
+      "image": "skills/javascript-original.svg",
+      "level": 7
+    },
+    {
+      "name": "TypeScript",
+      "image": "skills/typescript-original.svg",
+      "level": 6
+    },
+    {
+      "name": "MySQL",
+      "image": "skills/mysql-original.svg",
+      "level": 7
+    },
+    {
+      "name": "SQLite",
+      "image": "skills/sqlite-original.svg",
+      "level": 8
+    },
+    {
+      "name": "Neo4j",
+      "image": "skills/neo4j-original.svg",
+      "level": 5
+    },
+    {
+      "name": "Git",
+      "image": "skills/git-original.svg",
+      "level": 7
+    },
+    {
+      "name": "gRPC",
+      "image": "skills/grpc-original.svg",
+      "level": 5
+    },
+    {
+      "name": "Spring",
+      "image": "skills/spring-original.svg",
+      "level": 3
+    },
+    {
+      "name": "Android SDK",
+      "image": "skills/androidstudio-original.svg",
+      "level": 5
+    },
+    {
+      "name": "Arduino",
+      "image": "skills/arduino-original.svg",
+      "level": 2
+    },
+    {
+      "name": "Angular",
+      "image": "skills/angular-original.svg",
+      "level": 6
+    },
+    {
+      "name": "GitHub",
+      "image": "skills/github-original.svg",
+      "level": 7
+    }
+  ]
+}
