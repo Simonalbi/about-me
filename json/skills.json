@@ -76,19 +76,29 @@
       "level": 5
     },
     {
-      "name": "Arduino",
-      "image": "skills/arduino-original.svg",
-      "level": 2
-    },
-    {
       "name": "Angular",
       "image": "skills/angular-original.svg",
       "level": 6
     },
     {
+      "name": "Cucumber",
+      "image": "skills/cucumber-original.svg",
+      "level": 3
+    },
+    {
       "name": "GitHub",
       "image": "skills/github-original.svg",
       "level": 7
+    },
+    {
+      "name": "GitLab",
+      "image": "skills/gitlab-original.svg",
+      "level": 6
+    },
+    {
+      "name": "Arduino",
+      "image": "skills/arduino-original.svg",
+      "level": 2
     }
   ]
 }
