@@ -1,9 +1,17 @@
 {
   "certifications": [
     {
+      "name": "BDD with Cucumber (Java)",
+      "organization": "Cucumber Open Source Project",
+      "logo": "certifications/cucumber.svg",
+      "date": "2025-05-21",
+      "id": "t14gw4gsrn",
+      "url": "https://school.cucumber.io/certificates/t14gw4gsrn"
+    },
+    {
       "name": "Neo4j Certified Professional",
       "organization": "Neo4j",
-      "logo": "certifications/neo4j.png",
+      "logo": "certifications/neo4j.svg",
       "date": "2023-12-04",
       "id": "bacecb7b-b2bc-4b31-a717-bb27e5879e60",
       "url": "https://graphacademy.neo4j.com/c/bacecb7b-b2bc-4b31-a717-bb27e5879e60/"

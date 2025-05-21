@@ -4,12 +4,8 @@
   </div>
 
   <div>
-    <h5>{{ certification.name }}</h5>
-    <div class="certification-info-container">
-      <div class="certification-info">
-        <p class="sm">{{ certification.organization }}</p>
-        <p class="sm gray-text">{{ certification.date | date: 'MMM y'}}</p>
-      </div>
+    <div id="certification-name-container">
+      <h5>{{ certification.name }}</h5>
       <a [href]="certification.url" target="_blank">
         <div class="certification-url-button icon-sm">
           <h6>Show certificate</h6>
@@ -17,5 +13,7 @@
         </div>
       </a>
     </div>
+    <p class="sm">{{ certification.organization }}</p>
+    <p class="sm gray-text">{{ certification.date | date: 'MMM y'}}</p>
   </div>
 </div>
