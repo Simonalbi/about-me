@@ -37,6 +37,29 @@
   grid-row-start: 5;
 }
 
+@keyframes slideInDown {
+  from { opacity: 0; transform: translateY(-400px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.slide-in-down {
+  animation: slideInDown 0.8s ease;
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease;
+}
+
+.animatable {
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
 @media (max-width: 1024px) {
   #cards-container {
     grid-template-columns: 1fr;
