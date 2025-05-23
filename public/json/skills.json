@@ -83,7 +83,12 @@
     {
       "name": "Cucumber",
       "image": "skills/cucumber-original.svg",
-      "level": 3
+      "level": 4
+    },
+    {
+      "name": "Grafana",
+      "image": "skills/grafana-original.svg",
+      "level": 4
     },
     {
       "name": "GitHub",

@@ -1,10 +1,10 @@
 {
   "badges": [
     {
-      "name": "Artificial Intelligence and Machine Learning",
-      "src": "badges/b7d72097-d361-4637-91cf-914bab77bb07.png",
-      "url": "https://skillsoft.digitalbadges.skillsoft.com/d7400da3-0488-4917-945c-c7f56395fab3",
-      "issued": "2025-04-14",
+      "name": "ChatGPT Prompt Engineering Examples & Use Cases",
+      "src": "52754c84-a378-4709-875c-a4e96e485f69.png",
+      "url": "https://skillsoft.digitalbadges.skillsoft.com/0d52d795-cd0b-4c63-9790-ffa6c0039ebd",
+      "issued": "2025-05-23",
       "verified": true,
       "verifiedCertificationEntityUrl": "https://www.skillsoft.com"
     },
@@ -13,6 +13,14 @@
       "src": "badges/1e021f8d-4509-401f-b70c-0c437fa22831.png",
       "url": "https://skillsoft.digitalbadges.skillsoft.com/2b8adddb-34fa-4fbc-a614-58d8e278ba86",
       "issued": "2025-04-24",
+      "verified": true,
+      "verifiedCertificationEntityUrl": "https://www.skillsoft.com"
+    },
+    {
+      "name": "Artificial Intelligence and Machine Learning",
+      "src": "badges/b7d72097-d361-4637-91cf-914bab77bb07.png",
+      "url": "https://skillsoft.digitalbadges.skillsoft.com/d7400da3-0488-4917-945c-c7f56395fab3",
+      "issued": "2025-04-14",
       "verified": true,
       "verifiedCertificationEntityUrl": "https://www.skillsoft.com"
     }
