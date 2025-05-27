@@ -28,16 +28,16 @@ export class SkillsComponent implements OnInit{
   private skillsService = inject(SkillsService);
 
   private labels = [
-    'Principiante',
-    'Novizio',
-    'Base',
-    'Discreto',
-    'Intermedio',
-    'Buono',
-    'Ottimo',
-    'Avanzato',
-    'Esperto',
-    'Professionista'
+    'Beginner',
+    'Novice',
+    'Basic',
+    'Fair',
+    'Intermediate',
+    'Good',
+    'Very Good',
+    'Advanced',
+    'Expert',
+    'Professional'
   ];
 
   chartOptions: EChartsOption = {};
