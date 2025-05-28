@@ -86,6 +86,11 @@
       "level": 4
     },
     {
+      "name": "Selenium WebDriver",
+      "image": "skills/selenium-original.svg",
+      "level": 5
+    },
+    {
       "name": "Grafana",
       "image": "skills/grafana-original.svg",
       "level": 4
