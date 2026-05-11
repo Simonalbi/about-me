@@ -27,80 +27,33 @@
 <!-- TECH & SKILLS -->
 ## Technologies & Tools
 
-<p align="left">
-  <a href="https://developer.mozzilla.org/en-US/docs/Web/java">
-    <img src="https://skillicons.dev/icons?i=java" alt="java" width="40" height="40"/>
-  </a> 
-  <a href="https://developer.mozzilla.org/en-US/docs/Web/py">
-    <img src="https://skillicons.dev/icons?i=py" alt="python" width="40" height="40"/>
-  </a>
-  <a href="https://developer.mozzilla.org/en-US/docs/Web/c">
-    <img src="https://skillicons.dev/icons?i=c" alt="c" width="40" height="40"/>
-  </a>
-  <a href="https://developer.mozzilla.org/en-US/docs/Web/js">
-    <img src="https://skillicons.dev/icons?i=js" alt="javascript" width="40" height="40"/>
-  </a>
-  <a href="https://developer.mozzilla.org/en-US/docs/Web/ts">
-    <img src="https://skillicons.dev/icons?i=ts" alt="typescript" width="40" height="40"/>
-  </a>
-  <a href="https://developer.mozzilla.org/en-US/docs/Web/html">
-    <img src="https://skillicons.dev/icons?i=html" alt="html5" width="40" height="40"/>
-  </a>
-  <a href="https://developer.mozzilla.org/en-US/docs/Web/css">
-    <img src="https://skillicons.dev/icons?i=css" alt="css3" width="40" height="40"/>
-  </a>
-  <a href="https://developer.mozzilla.org/en-US/docs/Web/mysql">
-    <img src="https://skillicons.dev/icons?i=mysql" alt="mysql" width="40" height="40"/>
-  </a>
-  <a href="https://developer.mozzilla.org/en-US/docs/Web/postgres">
-    <img src="https://skillicons.dev/icons?i=postgres" alt="postgresql" width="40" height="40"/>
-  </a>
-  <a href="https://developer.mozzilla.org/en-US/docs/Web/sqlite">
-    <img src="https://skillicons.dev/icons?i=sqlite" alt="sqlite" width="40" height="40"/>
-  </a>
-  <a href="https://developer.mozzilla.org/en-US/docs/Web/git">
-    <img src="https://skillicons.dev/icons?i=git" alt="git" width="40" height="40"/>
-  </a>
-  <a href="https://developer.mozzilla.org/en-US/docs/Web/spring">
-    <img src="https://skillicons.dev/icons?i=spring" alt="spring" width="40" height="40"/>
-  </a>
-  <a href="https://developer.mozzilla.org/en-US/docs/Web/angular">
-    <img src="https://skillicons.dev/icons?i=angular" alt="angular" width="40" height="40"/>
-  </a>
-  <a href="https://developer.mozzilla.org/en-US/docs/Web/selenium">
-    <img src="https://skillicons.dev/icons?i=selenium" alt="selenium" width="40" height="40"/>
-  </a>
-  <a href="https://developer.mozzilla.org/en-US/docs/Web/gherkin">
-    <img src="https://skillicons.dev/icons?i=gherkin" alt="selenium" width="40" height="40"/>
-  </a>
-  <a href="https://developer.mozzilla.org/en-US/docs/Web/grafana">
-    <img src="https://skillicons.dev/icons?i=grafana" alt="grafana" width="40" height="40"/>
-  </a>
-  <a href="https://developer.mozzilla.org/en-US/docs/Web/vscode">
-    <img src="https://skillicons.dev/icons?i=vscode" alt="vscode" width="40" height="40"/>
-  </a>
-  <a href="https://developer.mozzilla.org/en-US/docs/Web/idea">
-    <img src="https://skillicons.dev/icons?i=idea" alt="vscode" width="40" height="40"/>
-  </a>
-  <a href="https://developer.mozzilla.org/en-US/docs/Web/androidstudio">
-    <img src="https://skillicons.dev/icons?i=androidstudio" alt="android" width="40" height="40" />
-  </a>
-  <a href="https://developer.mozzilla.org/en-US/docs/Web/arduino">
-    <img src="https://skillicons.dev/icons?i=arduino" alt="arduino" width="40" height="40"/>
-  </a>
-  <a href="https://developer.mozzilla.org/en-US/docs/Web/postman">
-    <img src="https://skillicons.dev/icons?i=postman" alt="postman" width="40" height="40"/>
-  </a>
-  <a href="https://developer.mozzilla.org/en-US/docs/Web/github">
-    <img src="https://skillicons.dev/icons?i=github" alt="vscode" width="40" height="40"/>
-  </a>
-  <a href="https://developer.mozzilla.org/en-US/docs/Web/gitlab">
-    <img src="https://skillicons.dev/icons?i=gitlab" alt="vscode" width="40" height="40"/>
-  </a>
-  <a href="https://developer.mozzilla.org/en-US/docs/Web/linux">
-    <img src="https://skillicons.dev/icons?i=linux" alt="linux" width="40" height="40"/>
-  </a>
-</p>
+[<img align="left" alt="java" style="padding-right:10px;" width="40px" height="40" src="https://skillicons.dev/icons?i=java" />][skillicons]
+[<img align="left" alt="python" style="padding-right:10px;" width="40px" height="40" src="https://skillicons.dev/icons?i=py" />][skillicons]
+[<img align="left" alt="c" style="padding-right:10px;" width="40px" height="40" src="https://skillicons.dev/icons?i=c" />][skillicons]
+[<img align="left" alt="javascript" style="padding-right:10px;" width="40px" height="40" src="https://skillicons.dev/icons?i=js" />][skillicons]
+[<img align="left" alt="typescript" style="padding-right:10px;" width="40px" height="40" src="https://skillicons.dev/icons?i=ts" />][skillicons]
+[<img align="left" alt="html5" style="padding-right:10px;" width="40px" height="40" src="https://skillicons.dev/icons?i=html" />][skillicons]
+[<img align="left" alt="css3" style="padding-right:10px;" width="40px" height="40" src="https://skillicons.dev/icons?i=css" />][skillicons]
+[<img align="left" alt="mysql" style="padding-right:10px;" width="40px" height="40" src="https://skillicons.dev/icons?i=mysql" />][skillicons]
+[<img align="left" alt="postgresql" style="padding-right:10px;" width="40px" height="40" src="https://skillicons.dev/icons?i=postgres" />][skillicons]
+[<img align="left" alt="sqlite" style="padding-right:10px;" width="40px" height="40" src="https://skillicons.dev/icons?i=sqlite" />][skillicons]
+[<img align="left" alt="git" style="padding-right:10px;" width="40px" height="40" src="https://skillicons.dev/icons?i=git" />][skillicons]
+[<img align="left" alt="spring" style="padding-right:10px;" width="40px" height="40" src="https://skillicons.dev/icons?i=spring" />][skillicons]
+[<img align="left" alt="angular" style="padding-right:10px;" width="40px" height="40" src="https://skillicons.dev/icons?i=angular" />][skillicons]
+[<img align="left" alt="selenium" style="padding-right:10px;" width="40px" height="40" src="https://skillicons.dev/icons?i=selenium" />][skillicons]
+[<img align="left" alt="gherkin" style="padding-right:10px;" width="40px" height="40" src="https://skillicons.dev/icons?i=gherkin" />][skillicons]
+[<img align="left" alt="grafana" style="padding-right:10px;" width="40px" height="40" src="https://skillicons.dev/icons?i=grafana" />][skillicons]
+[<img align="left" alt="vscode" style="padding-right:10px;" width="40px" height="40" src="https://skillicons.dev/icons?i=vscode" />][skillicons]
+[<img align="left" alt="idea" style="padding-right:10px;" width="40px" height="40" src="https://skillicons.dev/icons?i=idea" />][skillicons]
+[<img align="left" alt="android" style="padding-right:10px;" width="40px" height="40" src="https://skillicons.dev/icons?i=androidstudio" />][skillicons]
+[<img align="left" alt="arduino" style="padding-right:10px;" width="40px" height="40" src="https://skillicons.dev/icons?i=arduino" />][skillicons]
+[<img align="left" alt="postman" style="padding-right:10px;" width="40px" height="40" src="https://skillicons.dev/icons?i=postman" />][skillicons]
+[<img align="left" alt="github" style="padding-right:10px;" width="40px" height="40" src="https://skillicons.dev/icons?i=github" />][skillicons]
+[<img align="left" alt="gitlab" style="padding-right:10px;" width="40px" height="40" src="https://skillicons.dev/icons?i=gitlab" />][skillicons]
+[<img align="left" alt="linux" style="padding-right:10px;" width="40px" height="40" src="https://skillicons.dev/icons?i=linux" />][skillicons]
+
+<br />
+<br />
 
 ## 🚀 Currently Exploring
 
@@ -108,3 +61,5 @@
 | ---------------------------- | ---------------------------------- | ----------- |
 | ☁️ **Google Cloud Platform** |                                    | 🔄 Learning |
 | 🤖 **Arduino Robotics**      | Hexapod robot design & programming | 🔧 Building |
+
+[skillicons]: https://skillicons.dev
