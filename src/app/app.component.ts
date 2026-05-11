@@ -15,7 +15,7 @@ import { SkillsComponent } from "./skills/skills.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent implements AfterViewInit {
-  title = 'about-me';
+  title = 'Simonalbi';
 
   @ViewChildren('step0,step1,step2,step3,step4,step5') steps!: QueryList<ElementRef>;
 
